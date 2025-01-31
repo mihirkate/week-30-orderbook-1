@@ -9,6 +9,7 @@ export const AskTable = ({ asks }: { asks: [string, string][] }) => {
      * 132.97 253.03 
      */
     relevantAsks.reverse();
+
     /*
      * 132.97 253.03     270
      * 132.96 3    18
@@ -43,11 +44,6 @@ export const AskTable = ({ asks }: { asks: [string, string][] }) => {
         {asksWithTotal.map(([price, quantity, total]) => <Ask maxTotal={maxTotal} key={price} price={price} quantity={quantity} total={total} />)}
     </div>
 }
-
-
-
-
-
 
 
 
